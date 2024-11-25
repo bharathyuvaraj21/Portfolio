@@ -5,56 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bharath Yuvaraj | Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- For Interactive Graphs -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- For Graphs -->
 </head>
 <body>
     <header>
-        <h1>Bharath Yuvaraj</h1>
-        <p>Data Analyst | Business Intelligence | Predictive Modeling</p>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <h1>Bharath Yuvaraj</h1>
+            <p>Data Analyst | Business Intelligence | Predictive Modeling</p>
+        </div>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a Data Analyst with expertise in data-driven decision-making, leveraging tools like Python, SQL, Power BI, and Tableau. I specialize in predictive modeling, dashboard creation, and data visualization to empower strategic decisions.</p>
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Time Series Analysis</h3>
-            <p>Developed ARIMA, SARIMA, and LSTM models to forecast USDA wholesale meat prices. Below is a graph demonstrating price trends:</p>
-            <canvas id="timeSeriesChart"></canvas>
-        </div>
-        <div class="project">
-            <h3>Crime and Weather Data Visualization</h3>
-            <p>Analyzed datasets using R and created visualizations to predict crime patterns. Below is a bar chart showcasing crime statistics:</p>
-            <canvas id="crimeChart"></canvas>
-        </div>
-    </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul class="skills-list">
-            <li>Python</li>
-            <li>SQL</li>
-            <li>Power BI</li>
-            <li>Tableau</li>
-            <li>Machine Learning</li>
-            <li>Data Visualization</li>
-        </ul>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:bharathyuvaraj1@gmail.com">bharathyuvaraj1@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/bharath-yuvaraj" target="_blank">linkedin.com/in/bharath-yuvaraj</a></p>
-    </section>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Data Analyst with 1.5 years of experience transforming data into actionable insights. Skilled in Python, SQL, Power BI, Tableau, and predictive modeling.</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Time Series Analysis</h3>
+                <p>Developed ARIMA and LSTM models to forecast USDA wholesale meat prices. Below is a trend graph:</p>
+                <canvas id="timeSeriesChart"></canvas>
+            </div>
+            <div class="project-card">
+                <h3>Crime Data Visualization</h3>
+                <p>Created dashboards using R to visualize crime trends. Interactive chart:</p>
+                <canvas id="crimeChart"></canvas>
+            </div>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <div class="skill">
+                    <h4>Python</h4>
+                    <div class="progress-bar" style="width: 90%;"></div>
+                </div>
+                <div class="skill">
+                    <h4>SQL</h4>
+                    <div class="progress-bar" style="width: 85%;"></div>
+                </div>
+                <div class="skill">
+                    <h4>Power BI</h4>
+                    <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+                <div class="skill">
+                    <h4>Tableau</h4>
+                    <div class="progress-bar" style="width: 75%;"></div>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:bharathyuvaraj1@gmail.com">bharathyuvaraj1@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/bharath-yuvaraj" target="_blank">linkedin.com/in/bharath-yuvaraj</a></p>
+        </section>
+    </main>
     <footer>
-        <p>© 2024 Bharath Yuvaraj</p>
+        <p>© 2024 Bharath Yuvaraj | Portfolio</p>
     </footer>
     <script src="scripts.js"></script>
 </body>
